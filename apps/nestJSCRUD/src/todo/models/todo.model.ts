@@ -1,16 +1,17 @@
 import { Column, Model, Table } from 'sequelize-typescript';
 
+// Define table and column in database
 @Table
 export class Todo extends Model {
-  @Column({ primaryKey: true })
+  @Column({ primaryKey: true, allowNull: false })
   id: string;
 
-  @Column
+  @Column({ defaultValue: 'Công việc' })
   title: string;
 
   @Column
   description: string;
 
-  @Column({ defaultValue: true })
+  @Column({ defaultValue: false })
   completed: boolean;
 }
