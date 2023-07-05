@@ -1,0 +1,13 @@
+{
+  "development": {
+    "dialect": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "mnhquy2802@",
+    "database": "Todo_Migration",
+    "models": [],
+    "autoLoadModels": true,
+    "synchronize": true
+  }
+}
